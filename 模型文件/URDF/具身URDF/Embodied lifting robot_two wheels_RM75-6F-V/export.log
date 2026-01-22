@@ -1,0 +1,219 @@
+2026-01-20 16:04:52,878 INFO  AssemblyExportForm.cs: 309 - Saving URDF package to D:\realman\URDF\RM75-6F-V
+2026-01-20 16:04:52,882 INFO  ExportHelper.cs: 147 - Beginning the export process
+2026-01-20 16:04:52,883 INFO  ExportHelper.cs: 153 - Creating package directories with name RM75-6F-V and save path D:\realman\URDF
+2026-01-20 16:04:54,075 INFO  ExportHelper.cs: 162 - Creating CMakeLists.txt at D:\realman\URDF\RM75-6F-V\CMakeLists.txt
+2026-01-20 16:04:54,076 INFO  ExportHelper.cs: 166 - Creating joint names config at D:\realman\URDF\RM75-6F-V\config\joint_names_RM75-6F-V.yaml
+2026-01-20 16:04:54,076 INFO  ExportHelper.cs: 170 - Creating package.xml at D:\realman\URDF\RM75-6F-V\package.xml
+2026-01-20 16:04:54,077 INFO  PackageXMLWriter.cs: 21 - Creating package.xml at D:\realman\URDF\RM75-6F-V\package.xml
+2026-01-20 16:04:54,077 INFO  ExportHelper.cs: 177 - Creating RVIZ launch file in D:\realman\URDF\RM75-6F-V\launch\
+2026-01-20 16:04:54,077 INFO  ExportHelper.cs: 182 - Creating Gazebo launch file in D:\realman\URDF\RM75-6F-V\launch\
+2026-01-20 16:04:54,078 INFO  ExportHelper.cs: 187 - Saving existing STL preferences
+2026-01-20 16:04:54,078 INFO  ExportHelper.cs: 450 - Saving users preferences
+2026-01-20 16:04:54,078 INFO  ExportHelper.cs: 190 - Modifying STL preferences
+2026-01-20 16:04:54,078 INFO  ExportHelper.cs: 464 - Setting STL preferences
+2026-01-20 16:04:54,079 INFO  ExportHelper.cs: 196 - Found 0 hidden components 
+2026-01-20 16:04:54,079 INFO  ExportHelper.cs: 197 - Hiding all components
+2026-01-20 16:04:54,514 INFO  ExportHelper.cs: 204 - Beginning individual files export
+2026-01-20 16:04:54,516 INFO  ExportHelper.cs: 270 - Exporting link: base_link
+2026-01-20 16:04:54,516 INFO  ExportHelper.cs: 272 - Link base_link has 6 children
+2026-01-20 16:04:54,517 INFO  ExportHelper.cs: 270 - Exporting link: link_1
+2026-01-20 16:04:54,517 INFO  ExportHelper.cs: 272 - Link link_1 has 0 children
+2026-01-20 16:04:54,517 INFO  ExportHelper.cs: 317 - link_1: Exporting STL with coordinate frame link1
+2026-01-20 16:04:54,517 INFO  ExportHelper.cs: 322 - link_1: Reference geometry name 
+2026-01-20 16:04:56,236 INFO  ExportHelper.cs: 330 - Saving STL to D:\realman\URDF\RM75-6F-V\meshes\link_1.STL
+2026-01-20 16:04:56,793 INFO  ExportHelper.cs: 405 - Removing SW header in STL file
+2026-01-20 16:04:56,795 INFO  ExportHelper.cs: 270 - Exporting link: link_2
+2026-01-20 16:04:56,795 INFO  ExportHelper.cs: 272 - Link link_2 has 0 children
+2026-01-20 16:04:56,795 INFO  ExportHelper.cs: 317 - link_2: Exporting STL with coordinate frame link2
+2026-01-20 16:04:56,796 INFO  ExportHelper.cs: 322 - link_2: Reference geometry name 
+2026-01-20 16:04:56,842 INFO  ExportHelper.cs: 330 - Saving STL to D:\realman\URDF\RM75-6F-V\meshes\link_2.STL
+2026-01-20 16:04:56,870 INFO  ExportHelper.cs: 405 - Removing SW header in STL file
+2026-01-20 16:04:56,871 INFO  ExportHelper.cs: 270 - Exporting link: link_3
+2026-01-20 16:04:56,871 INFO  ExportHelper.cs: 272 - Link link_3 has 0 children
+2026-01-20 16:04:56,871 INFO  ExportHelper.cs: 317 - link_3: Exporting STL with coordinate frame link3
+2026-01-20 16:04:56,872 INFO  ExportHelper.cs: 322 - link_3: Reference geometry name 
+2026-01-20 16:04:56,888 INFO  ExportHelper.cs: 330 - Saving STL to D:\realman\URDF\RM75-6F-V\meshes\link_3.STL
+2026-01-20 16:04:56,916 INFO  ExportHelper.cs: 405 - Removing SW header in STL file
+2026-01-20 16:04:56,917 INFO  ExportHelper.cs: 270 - Exporting link: link_4
+2026-01-20 16:04:56,917 INFO  ExportHelper.cs: 272 - Link link_4 has 0 children
+2026-01-20 16:04:56,918 INFO  ExportHelper.cs: 317 - link_4: Exporting STL with coordinate frame link4
+2026-01-20 16:04:56,918 INFO  ExportHelper.cs: 322 - link_4: Reference geometry name 
+2026-01-20 16:04:56,936 INFO  ExportHelper.cs: 330 - Saving STL to D:\realman\URDF\RM75-6F-V\meshes\link_4.STL
+2026-01-20 16:04:56,964 INFO  ExportHelper.cs: 405 - Removing SW header in STL file
+2026-01-20 16:04:56,965 INFO  ExportHelper.cs: 270 - Exporting link: link_5
+2026-01-20 16:04:56,965 INFO  ExportHelper.cs: 272 - Link link_5 has 3 children
+2026-01-20 16:04:56,966 INFO  ExportHelper.cs: 270 - Exporting link: link_left_0
+2026-01-20 16:04:56,966 INFO  ExportHelper.cs: 272 - Link link_left_0 has 1 children
+2026-01-20 16:04:56,967 INFO  ExportHelper.cs: 270 - Exporting link: link_left_1
+2026-01-20 16:04:56,967 INFO  ExportHelper.cs: 272 - Link link_left_1 has 1 children
+2026-01-20 16:04:56,967 INFO  ExportHelper.cs: 270 - Exporting link: link_left_2
+2026-01-20 16:04:56,968 INFO  ExportHelper.cs: 272 - Link link_left_2 has 1 children
+2026-01-20 16:04:56,968 INFO  ExportHelper.cs: 270 - Exporting link: link_left_3
+2026-01-20 16:04:56,968 INFO  ExportHelper.cs: 272 - Link link_left_3 has 1 children
+2026-01-20 16:04:56,969 INFO  ExportHelper.cs: 270 - Exporting link: link_left_4
+2026-01-20 16:04:56,969 INFO  ExportHelper.cs: 272 - Link link_left_4 has 1 children
+2026-01-20 16:04:56,970 INFO  ExportHelper.cs: 270 - Exporting link: link_left_5
+2026-01-20 16:04:56,970 INFO  ExportHelper.cs: 272 - Link link_left_5 has 1 children
+2026-01-20 16:04:56,971 INFO  ExportHelper.cs: 270 - Exporting link: link_left_6
+2026-01-20 16:04:56,971 INFO  ExportHelper.cs: 272 - Link link_left_6 has 1 children
+2026-01-20 16:04:56,972 INFO  ExportHelper.cs: 270 - Exporting link: link_left_7
+2026-01-20 16:04:56,972 INFO  ExportHelper.cs: 272 - Link link_left_7 has 1 children
+2026-01-20 16:04:56,972 INFO  ExportHelper.cs: 270 - Exporting link: link_left_camera
+2026-01-20 16:04:56,973 INFO  ExportHelper.cs: 272 - Link link_left_camera has 0 children
+2026-01-20 16:04:56,973 INFO  ExportHelper.cs: 317 - link_left_camera: Exporting STL with coordinate frame link_left_camera
+2026-01-20 16:04:56,973 INFO  ExportHelper.cs: 322 - link_left_camera: Reference geometry name 
+2026-01-20 16:04:57,010 INFO  ExportHelper.cs: 330 - Saving STL to D:\realman\URDF\RM75-6F-V\meshes\link_left_camera.STL
+2026-01-20 16:04:58,705 INFO  ExportHelper.cs: 405 - Removing SW header in STL file
+2026-01-20 16:04:58,705 INFO  ExportHelper.cs: 317 - link_left_7: Exporting STL with coordinate frame left_6F
+2026-01-20 16:04:58,706 INFO  ExportHelper.cs: 322 - link_left_7: Reference geometry name 
+2026-01-20 16:04:58,737 INFO  ExportHelper.cs: 330 - Saving STL to D:\realman\URDF\RM75-6F-V\meshes\link_left_7.STL
+2026-01-20 16:04:59,901 INFO  ExportHelper.cs: 405 - Removing SW header in STL file
+2026-01-20 16:04:59,901 INFO  ExportHelper.cs: 317 - link_left_6: Exporting STL with coordinate frame left_6
+2026-01-20 16:04:59,902 INFO  ExportHelper.cs: 322 - link_left_6: Reference geometry name 
+2026-01-20 16:04:59,922 INFO  ExportHelper.cs: 330 - Saving STL to D:\realman\URDF\RM75-6F-V\meshes\link_left_6.STL
+2026-01-20 16:05:00,006 INFO  ExportHelper.cs: 405 - Removing SW header in STL file
+2026-01-20 16:05:00,007 INFO  ExportHelper.cs: 317 - link_left_5: Exporting STL with coordinate frame left_5
+2026-01-20 16:05:00,007 INFO  ExportHelper.cs: 322 - link_left_5: Reference geometry name 
+2026-01-20 16:05:00,039 INFO  ExportHelper.cs: 330 - Saving STL to D:\realman\URDF\RM75-6F-V\meshes\link_left_5.STL
+2026-01-20 16:05:00,114 INFO  ExportHelper.cs: 405 - Removing SW header in STL file
+2026-01-20 16:05:00,114 INFO  ExportHelper.cs: 317 - link_left_4: Exporting STL with coordinate frame left_4
+2026-01-20 16:05:00,116 INFO  ExportHelper.cs: 322 - link_left_4: Reference geometry name 
+2026-01-20 16:05:00,140 INFO  ExportHelper.cs: 330 - Saving STL to D:\realman\URDF\RM75-6F-V\meshes\link_left_4.STL
+2026-01-20 16:05:00,254 INFO  ExportHelper.cs: 405 - Removing SW header in STL file
+2026-01-20 16:05:00,255 INFO  ExportHelper.cs: 317 - link_left_3: Exporting STL with coordinate frame left_3
+2026-01-20 16:05:00,255 INFO  ExportHelper.cs: 322 - link_left_3: Reference geometry name 
+2026-01-20 16:05:00,276 INFO  ExportHelper.cs: 330 - Saving STL to D:\realman\URDF\RM75-6F-V\meshes\link_left_3.STL
+2026-01-20 16:05:00,360 INFO  ExportHelper.cs: 405 - Removing SW header in STL file
+2026-01-20 16:05:00,360 INFO  ExportHelper.cs: 317 - link_left_2: Exporting STL with coordinate frame left_2
+2026-01-20 16:05:00,363 INFO  ExportHelper.cs: 322 - link_left_2: Reference geometry name 
+2026-01-20 16:05:00,391 INFO  ExportHelper.cs: 330 - Saving STL to D:\realman\URDF\RM75-6F-V\meshes\link_left_2.STL
+2026-01-20 16:05:00,502 INFO  ExportHelper.cs: 405 - Removing SW header in STL file
+2026-01-20 16:05:00,503 INFO  ExportHelper.cs: 317 - link_left_1: Exporting STL with coordinate frame left_1
+2026-01-20 16:05:00,503 INFO  ExportHelper.cs: 322 - link_left_1: Reference geometry name 
+2026-01-20 16:05:00,524 INFO  ExportHelper.cs: 330 - Saving STL to D:\realman\URDF\RM75-6F-V\meshes\link_left_1.STL
+2026-01-20 16:05:00,610 INFO  ExportHelper.cs: 405 - Removing SW header in STL file
+2026-01-20 16:05:00,610 INFO  ExportHelper.cs: 317 - link_left_0: Exporting STL with coordinate frame left_0
+2026-01-20 16:05:00,611 INFO  ExportHelper.cs: 322 - link_left_0: Reference geometry name 
+2026-01-20 16:05:00,634 INFO  ExportHelper.cs: 330 - Saving STL to D:\realman\URDF\RM75-6F-V\meshes\link_left_0.STL
+2026-01-20 16:05:00,675 INFO  ExportHelper.cs: 405 - Removing SW header in STL file
+2026-01-20 16:05:00,676 INFO  ExportHelper.cs: 270 - Exporting link: link_right_0
+2026-01-20 16:05:00,677 INFO  ExportHelper.cs: 272 - Link link_right_0 has 1 children
+2026-01-20 16:05:00,677 INFO  ExportHelper.cs: 270 - Exporting link: link_right_1
+2026-01-20 16:05:00,677 INFO  ExportHelper.cs: 272 - Link link_right_1 has 1 children
+2026-01-20 16:05:00,678 INFO  ExportHelper.cs: 270 - Exporting link: link_right_2
+2026-01-20 16:05:00,686 INFO  ExportHelper.cs: 272 - Link link_right_2 has 1 children
+2026-01-20 16:05:00,686 INFO  ExportHelper.cs: 270 - Exporting link: link_right_3
+2026-01-20 16:05:00,687 INFO  ExportHelper.cs: 272 - Link link_right_3 has 1 children
+2026-01-20 16:05:00,687 INFO  ExportHelper.cs: 270 - Exporting link: link_right_4
+2026-01-20 16:05:00,687 INFO  ExportHelper.cs: 272 - Link link_right_4 has 1 children
+2026-01-20 16:05:00,689 INFO  ExportHelper.cs: 270 - Exporting link: link_right_5
+2026-01-20 16:05:00,689 INFO  ExportHelper.cs: 272 - Link link_right_5 has 1 children
+2026-01-20 16:05:00,690 INFO  ExportHelper.cs: 270 - Exporting link: link_right_6
+2026-01-20 16:05:00,690 INFO  ExportHelper.cs: 272 - Link link_right_6 has 1 children
+2026-01-20 16:05:00,690 INFO  ExportHelper.cs: 270 - Exporting link: link_right_7
+2026-01-20 16:05:00,690 INFO  ExportHelper.cs: 272 - Link link_right_7 has 1 children
+2026-01-20 16:05:00,690 INFO  ExportHelper.cs: 270 - Exporting link: link_right_camera
+2026-01-20 16:05:00,691 INFO  ExportHelper.cs: 272 - Link link_right_camera has 0 children
+2026-01-20 16:05:00,691 INFO  ExportHelper.cs: 317 - link_right_camera: Exporting STL with coordinate frame link_right_camera
+2026-01-20 16:05:00,691 INFO  ExportHelper.cs: 322 - link_right_camera: Reference geometry name 
+2026-01-20 16:05:00,820 INFO  ExportHelper.cs: 330 - Saving STL to D:\realman\URDF\RM75-6F-V\meshes\link_right_camera.STL
+2026-01-20 16:05:02,528 INFO  ExportHelper.cs: 405 - Removing SW header in STL file
+2026-01-20 16:05:02,529 INFO  ExportHelper.cs: 317 - link_right_7: Exporting STL with coordinate frame right_7_6F
+2026-01-20 16:05:02,529 INFO  ExportHelper.cs: 322 - link_right_7: Reference geometry name 
+2026-01-20 16:05:02,567 INFO  ExportHelper.cs: 330 - Saving STL to D:\realman\URDF\RM75-6F-V\meshes\link_right_7.STL
+2026-01-20 16:05:03,745 INFO  ExportHelper.cs: 405 - Removing SW header in STL file
+2026-01-20 16:05:03,745 INFO  ExportHelper.cs: 317 - link_right_6: Exporting STL with coordinate frame right_6
+2026-01-20 16:05:03,746 INFO  ExportHelper.cs: 322 - link_right_6: Reference geometry name 
+2026-01-20 16:05:03,776 INFO  ExportHelper.cs: 330 - Saving STL to D:\realman\URDF\RM75-6F-V\meshes\link_right_6.STL
+2026-01-20 16:05:03,880 INFO  ExportHelper.cs: 405 - Removing SW header in STL file
+2026-01-20 16:05:03,881 INFO  ExportHelper.cs: 317 - link_right_5: Exporting STL with coordinate frame right_5
+2026-01-20 16:05:03,881 INFO  ExportHelper.cs: 322 - link_right_5: Reference geometry name 
+2026-01-20 16:05:03,903 INFO  ExportHelper.cs: 330 - Saving STL to D:\realman\URDF\RM75-6F-V\meshes\link_right_5.STL
+2026-01-20 16:05:03,975 INFO  ExportHelper.cs: 405 - Removing SW header in STL file
+2026-01-20 16:05:03,976 INFO  ExportHelper.cs: 317 - link_right_4: Exporting STL with coordinate frame right_4
+2026-01-20 16:05:03,976 INFO  ExportHelper.cs: 322 - link_right_4: Reference geometry name 
+2026-01-20 16:05:04,002 INFO  ExportHelper.cs: 330 - Saving STL to D:\realman\URDF\RM75-6F-V\meshes\link_right_4.STL
+2026-01-20 16:05:04,114 INFO  ExportHelper.cs: 405 - Removing SW header in STL file
+2026-01-20 16:05:04,115 INFO  ExportHelper.cs: 317 - link_right_3: Exporting STL with coordinate frame right_3
+2026-01-20 16:05:04,115 INFO  ExportHelper.cs: 322 - link_right_3: Reference geometry name 
+2026-01-20 16:05:04,139 INFO  ExportHelper.cs: 330 - Saving STL to D:\realman\URDF\RM75-6F-V\meshes\link_right_3.STL
+2026-01-20 16:05:04,223 INFO  ExportHelper.cs: 405 - Removing SW header in STL file
+2026-01-20 16:05:04,223 INFO  ExportHelper.cs: 317 - link_right_2: Exporting STL with coordinate frame right_2
+2026-01-20 16:05:04,223 INFO  ExportHelper.cs: 322 - link_right_2: Reference geometry name 
+2026-01-20 16:05:04,244 INFO  ExportHelper.cs: 330 - Saving STL to D:\realman\URDF\RM75-6F-V\meshes\link_right_2.STL
+2026-01-20 16:05:04,362 INFO  ExportHelper.cs: 405 - Removing SW header in STL file
+2026-01-20 16:05:04,363 INFO  ExportHelper.cs: 317 - link_right_1: Exporting STL with coordinate frame right_1
+2026-01-20 16:05:04,363 INFO  ExportHelper.cs: 322 - link_right_1: Reference geometry name 
+2026-01-20 16:05:04,392 INFO  ExportHelper.cs: 330 - Saving STL to D:\realman\URDF\RM75-6F-V\meshes\link_right_1.STL
+2026-01-20 16:05:04,470 INFO  ExportHelper.cs: 405 - Removing SW header in STL file
+2026-01-20 16:05:04,470 INFO  ExportHelper.cs: 317 - link_right_0: Exporting STL with coordinate frame right_0
+2026-01-20 16:05:04,471 INFO  ExportHelper.cs: 322 - link_right_0: Reference geometry name 
+2026-01-20 16:05:04,489 INFO  ExportHelper.cs: 330 - Saving STL to D:\realman\URDF\RM75-6F-V\meshes\link_right_0.STL
+2026-01-20 16:05:04,533 INFO  ExportHelper.cs: 405 - Removing SW header in STL file
+2026-01-20 16:05:04,534 INFO  ExportHelper.cs: 270 - Exporting link: link_mid_1
+2026-01-20 16:05:04,534 INFO  ExportHelper.cs: 272 - Link link_mid_1 has 1 children
+2026-01-20 16:05:04,535 INFO  ExportHelper.cs: 270 - Exporting link: link_mid_2
+2026-01-20 16:05:04,535 INFO  ExportHelper.cs: 272 - Link link_mid_2 has 1 children
+2026-01-20 16:05:04,536 INFO  ExportHelper.cs: 270 - Exporting link: link_mid_camera
+2026-01-20 16:05:04,536 INFO  ExportHelper.cs: 272 - Link link_mid_camera has 0 children
+2026-01-20 16:05:04,537 INFO  ExportHelper.cs: 317 - link_mid_camera: Exporting STL with coordinate frame mid_3
+2026-01-20 16:05:04,537 INFO  ExportHelper.cs: 322 - link_mid_camera: Reference geometry name 
+2026-01-20 16:05:04,574 INFO  ExportHelper.cs: 330 - Saving STL to D:\realman\URDF\RM75-6F-V\meshes\link_mid_camera.STL
+2026-01-20 16:05:06,258 INFO  ExportHelper.cs: 405 - Removing SW header in STL file
+2026-01-20 16:05:06,259 INFO  ExportHelper.cs: 317 - link_mid_2: Exporting STL with coordinate frame mid_2
+2026-01-20 16:05:06,260 INFO  ExportHelper.cs: 322 - link_mid_2: Reference geometry name 
+2026-01-20 16:05:06,285 INFO  ExportHelper.cs: 330 - Saving STL to D:\realman\URDF\RM75-6F-V\meshes\link_mid_2.STL
+2026-01-20 16:05:06,425 INFO  ExportHelper.cs: 405 - Removing SW header in STL file
+2026-01-20 16:05:06,426 INFO  ExportHelper.cs: 317 - link_mid_1: Exporting STL with coordinate frame mid_1
+2026-01-20 16:05:06,426 INFO  ExportHelper.cs: 322 - link_mid_1: Reference geometry name 
+2026-01-20 16:05:06,446 INFO  ExportHelper.cs: 330 - Saving STL to D:\realman\URDF\RM75-6F-V\meshes\link_mid_1.STL
+2026-01-20 16:05:06,518 INFO  ExportHelper.cs: 405 - Removing SW header in STL file
+2026-01-20 16:05:06,518 INFO  ExportHelper.cs: 317 - link_5: Exporting STL with coordinate frame link_5
+2026-01-20 16:05:06,519 INFO  ExportHelper.cs: 322 - link_5: Reference geometry name 
+2026-01-20 16:05:06,626 INFO  ExportHelper.cs: 330 - Saving STL to D:\realman\URDF\RM75-6F-V\meshes\link_5.STL
+2026-01-20 16:05:07,153 INFO  ExportHelper.cs: 405 - Removing SW header in STL file
+2026-01-20 16:05:07,154 INFO  ExportHelper.cs: 270 - Exporting link: link_6
+2026-01-20 16:05:07,154 INFO  ExportHelper.cs: 272 - Link link_6 has 0 children
+2026-01-20 16:05:07,154 INFO  ExportHelper.cs: 317 - link_6: Exporting STL with coordinate frame link_6
+2026-01-20 16:05:07,155 INFO  ExportHelper.cs: 322 - link_6: Reference geometry name 
+2026-01-20 16:05:07,197 INFO  ExportHelper.cs: 330 - Saving STL to D:\realman\URDF\RM75-6F-V\meshes\link_6.STL
+2026-01-20 16:05:08,879 INFO  ExportHelper.cs: 405 - Removing SW header in STL file
+2026-01-20 16:05:08,879 INFO  ExportHelper.cs: 317 - base_link: Exporting STL with coordinate frame base
+2026-01-20 16:05:08,880 INFO  ExportHelper.cs: 322 - base_link: Reference geometry name 
+2026-01-20 16:05:08,940 INFO  ExportHelper.cs: 330 - Saving STL to D:\realman\URDF\RM75-6F-V\meshes\base_link.STL
+2026-01-20 16:05:13,500 INFO  ExportHelper.cs: 405 - Removing SW header in STL file
+2026-01-20 16:05:13,501 INFO  ExportHelper.cs: 145 - Showing all components except previously hidden components
+2026-01-20 16:05:13,863 INFO  ExportHelper.cs: 145 - Resetting STL preferences
+2026-01-20 16:05:13,863 INFO  ExportHelper.cs: 478 - Returning STL preferences to user preferences
+2026-01-20 16:05:13,863 INFO  ExportHelper.cs: 228 - Writing URDF file to D:\realman\URDF\RM75-6F-V\urdf\RM75-6F-V.urdf
+2026-01-20 16:05:13,865 INFO  CSVImportExport.cs: 32 - Writing CSV file D:\realman\URDF\RM75-6F-V\urdf\RM75-6F-V.csv
+2026-01-20 16:05:13,865 ERROR CSVImportExport.cs: 130 - The following columns were not written to the CSV: Link.Joint.ChildLink.link,
+2026-01-20 16:05:13,865 ERROR CSVImportExport.cs: 130 - The following columns were not written to the CSV: Link.Joint.ChildLink.link,
+2026-01-20 16:05:13,865 ERROR CSVImportExport.cs: 130 - The following columns were not written to the CSV: Link.Joint.ChildLink.link,
+2026-01-20 16:05:13,866 ERROR CSVImportExport.cs: 130 - The following columns were not written to the CSV: Link.Joint.ChildLink.link,
+2026-01-20 16:05:13,866 ERROR CSVImportExport.cs: 130 - The following columns were not written to the CSV: Link.Joint.ChildLink.link,
+2026-01-20 16:05:13,866 ERROR CSVImportExport.cs: 130 - The following columns were not written to the CSV: Link.Joint.ChildLink.link,
+2026-01-20 16:05:13,866 ERROR CSVImportExport.cs: 130 - The following columns were not written to the CSV: Link.Joint.ChildLink.link,
+2026-01-20 16:05:13,868 ERROR CSVImportExport.cs: 130 - The following columns were not written to the CSV: Link.Joint.ChildLink.link,
+2026-01-20 16:05:13,868 ERROR CSVImportExport.cs: 130 - The following columns were not written to the CSV: Link.Joint.ChildLink.link,
+2026-01-20 16:05:13,868 ERROR CSVImportExport.cs: 130 - The following columns were not written to the CSV: Link.Joint.ChildLink.link,
+2026-01-20 16:05:13,868 ERROR CSVImportExport.cs: 130 - The following columns were not written to the CSV: Link.Joint.ChildLink.link,
+2026-01-20 16:05:13,869 ERROR CSVImportExport.cs: 130 - The following columns were not written to the CSV: Link.Joint.ChildLink.link,
+2026-01-20 16:05:13,869 ERROR CSVImportExport.cs: 130 - The following columns were not written to the CSV: Link.Joint.ChildLink.link,
+2026-01-20 16:05:13,869 ERROR CSVImportExport.cs: 130 - The following columns were not written to the CSV: Link.Joint.ChildLink.link,
+2026-01-20 16:05:13,869 ERROR CSVImportExport.cs: 130 - The following columns were not written to the CSV: Link.Joint.ChildLink.link,
+2026-01-20 16:05:13,870 ERROR CSVImportExport.cs: 130 - The following columns were not written to the CSV: Link.Joint.ChildLink.link,
+2026-01-20 16:05:13,870 ERROR CSVImportExport.cs: 130 - The following columns were not written to the CSV: Link.Joint.ChildLink.link,
+2026-01-20 16:05:13,870 ERROR CSVImportExport.cs: 130 - The following columns were not written to the CSV: Link.Joint.ChildLink.link,
+2026-01-20 16:05:13,870 ERROR CSVImportExport.cs: 130 - The following columns were not written to the CSV: Link.Joint.ChildLink.link,
+2026-01-20 16:05:13,870 ERROR CSVImportExport.cs: 130 - The following columns were not written to the CSV: Link.Joint.ChildLink.link,
+2026-01-20 16:05:13,871 ERROR CSVImportExport.cs: 130 - The following columns were not written to the CSV: Link.Joint.ChildLink.link,
+2026-01-20 16:05:13,871 ERROR CSVImportExport.cs: 130 - The following columns were not written to the CSV: Link.Joint.ChildLink.link,
+2026-01-20 16:05:13,871 ERROR CSVImportExport.cs: 130 - The following columns were not written to the CSV: Link.Joint.ChildLink.link,
+2026-01-20 16:05:13,872 ERROR CSVImportExport.cs: 130 - The following columns were not written to the CSV: Link.Joint.ChildLink.link,
+2026-01-20 16:05:13,874 ERROR CSVImportExport.cs: 130 - The following columns were not written to the CSV: Link.Joint.ChildLink.link,
+2026-01-20 16:05:13,874 ERROR CSVImportExport.cs: 130 - The following columns were not written to the CSV: Link.Joint.ChildLink.link,
+2026-01-20 16:05:13,874 ERROR CSVImportExport.cs: 130 - The following columns were not written to the CSV: Link.Joint.ChildLink.link,
+2026-01-20 16:05:13,874 ERROR CSVImportExport.cs: 130 - The following columns were not written to the CSV: Link.Joint.ChildLink.link,
+2026-01-20 16:05:13,875 INFO  ExportHelper.cs: 234 - Copying log file
+2026-01-20 16:05:13,875 INFO  ExportHelper.cs: 439 - Copying C:\Users\dell\sw2urdf_logs\sw2urdf.log to D:\realman\URDF\RM75-6F-V\export.log

@@ -1,0 +1,2420 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- This URDF was automatically created by SolidWorks to URDF Exporter! Originally created by Stephen Brawner (brawner@gmail.com) 
+     Commit Version: 1.6.0-4-g7f85cfe  Build Version: 1.6.7995.38578
+     For more information, please see http://wiki.ros.org/sw_urdf_exporter -->
+<robot
+  name="RM75_6F_V">
+  <link
+    name="base_link">
+    <inertial>
+      <origin
+        xyz="0.0066 -0.0008 0.1073"
+        rpy="0 0 0" />
+      <mass
+        value="91" />
+      <inertia
+        ixx="15.519"
+        ixy="-0.065"
+        ixz="0.70254"
+        iyy="16.124"
+        iyz="0.029"
+        izz="3.329" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://RM75_6F_V/meshes/base_link.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="1 1 1 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://RM75_6F_V/meshes/base_link.STL" />
+      </geometry>
+    </collision>
+  </link>
+    <link
+    name="link_1">
+    <inertial>
+      <origin
+        xyz="0 -0.023 0"
+        rpy="0 0 0" />
+      <mass
+        value="1" />
+      <inertia
+        ixx="0.001961"
+        ixy="0"
+        ixz="0"
+        iyy="0.003570125"
+        iyz="0"
+        izz="0.001961396" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://RM75_6F_V/meshes/link_1.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.65098 0.61961 0.58824 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://RM75_6F_V/meshes/link_1.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="joint_1"
+    type="continuous">
+    <origin
+      xyz="-0.018 -0.1435 -0.15648"
+      rpy="0 0 0" />
+    <parent
+      link="base_link" />
+    <child
+      link="link_1" />
+    <axis
+      xyz="0 -1 0" />
+    <limit
+      lower="0"
+      upper="100"
+      effort="7"
+      velocity="5.88" />
+  </joint>
+  <link
+    name="link_2">
+    <inertial>
+      <origin
+        xyz="0 0.023 0"
+        rpy="0 0 0" />
+      <mass
+        value="1" />
+      <inertia
+        ixx="0.001961396"
+        ixy="0"
+        ixz="0"
+        iyy="0.003570125"
+        iyz="0"
+        izz="0.001961396" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://RM75_6F_V/meshes/link_2.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.65098 0.61961 0.58824 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://RM75_6F_V/meshes/link_2.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="joint_2"
+    type="continuous">
+    <origin
+      xyz="-0.018 0.1435 -0.15648"
+      rpy="0 0 0" />
+    <parent
+      link="base_link" />
+    <child
+      link="link_2" />
+    <axis
+      xyz="0 1 0" />
+    <limit
+      lower="0"
+      upper="100"
+      effort="7"
+      velocity="5.88" />
+  </joint>
+  <link
+    name="link_3">
+    <inertial>
+      <origin
+        xyz="1.0258E-05 0.0004595 -0.01215"
+        rpy="0 0 0" />
+      <mass
+        value="0.01" />
+      <inertia
+        ixx="4.6878E-07"
+        ixy="-6.489E-10"
+        ixz="3.3333E-10"
+        iyy="4.4062E-07"
+        iyz="1.4931E-08"
+        izz="6.273E-07" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://RM75_6F_V/meshes/link_3.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="1 1 1 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://RM75_6F_V/meshes/link_3.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="joint_3"
+    type="fixed">
+    <origin
+      xyz="0.14113 6.9353E-05 1.458"
+      rpy="0 0 0" />
+    <parent
+      link="base_link" />
+    <child
+      link="link_3" />
+    <axis
+      xyz="0 0 0" />
+  </joint>
+  <link
+    name="link_4">
+    <inertial>
+      <origin
+        xyz="0.01215 -0.00014418 0.00043641"
+        rpy="0 0 0" />
+      <mass
+        value="0.01" />
+      <inertia
+        ixx="6.273E-07"
+        ixy="4.685E-09"
+        ixz="-1.4181E-08"
+        iyy="4.6601E-07"
+        iyz="8.4137E-09"
+        izz="4.4339E-07" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://RM75_6F_V/meshes/link_4.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="1 1 1 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://RM75_6F_V/meshes/link_4.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="joint_4"
+    type="fixed">
+    <origin
+      xyz="-0.013691 0 1.3819"
+      rpy="0 0 0" />
+    <parent
+      link="base_link" />
+    <child
+      link="link_4" />
+    <axis
+      xyz="0 0 0" />
+  </joint>
+  <link
+    name="link_5">
+    <inertial>
+      <origin
+        xyz="4E-06 -0.095859 0.14848"
+        rpy="0 0 0" />
+      <mass
+        value="11" />
+      <inertia
+        ixx="0.092858272"
+        ixy="2.2E-05"
+        ixz="-1.1585E-05"
+        iyy="0.146075845"
+        iyz="-2.77942E-04"
+        izz="0.118670960" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://RM75_6F_V/meshes/link_5.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="1 1 1 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://RM75_6F_V/meshes/link_5.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="joint_5"
+    type="prismatic">
+    <origin
+      xyz="0.28339 0 0.17234"
+      rpy="0 0 -1.5708" />
+    <parent
+      link="base_link" />
+    <child
+      link="link_5" />
+    <axis
+      xyz="0 0 -1" />
+    <limit
+      lower="-1"
+      upper="0"
+      effort="250"
+      velocity="0.2" />
+  </joint>
+  <link
+    name="link_left_0">
+    <inertial>
+      <origin
+        xyz="0.00017015 4.8354E-09 0.077978"
+        rpy="0 0 0" />
+      <mass
+        value="0.33723" />
+      <inertia
+        ixx="0.00047403"
+        ixy="-2.9684E-12"
+        ixz="0"
+        iyy="0.00047403"
+        iyz="-6.211E-11"
+        izz="0.00050951" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://RM75_6F_V/meshes/link_left_0.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.89804 0.91765 0.92941 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://RM75_6F_V/meshes/link_left_0.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="joint_left_0"
+    type="fixed">
+    <origin
+      xyz="-0.027968 -0.060363 0.12333"
+      rpy="0 -0.7854 0" />
+    <parent
+      link="link_5" />
+    <child
+      link="link_left_0" />
+    <axis
+      xyz="0 0 0" />
+    <limit
+      lower="-0.98"
+      upper="0.98"
+      effort="0"
+      velocity="0" />
+  </joint>
+  <link
+    name="link_left_1">
+    <inertial>
+      <origin
+        xyz="0.000241 -0.013273 -0.00995"
+        rpy="0 0 0" />
+      <mass
+        value="1.574" />
+      <inertia
+        ixx="0.002920666"
+        ixy="0.000014703"
+        ixz="-0.000004131"
+        iyy="0.002476942"
+        iyz="-0.000028462"
+        izz="0.001727926" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://RM75_6F_V/meshes/link_left_1.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.79216 0.81961 0.93333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://RM75_6F_V/meshes/link_left_1.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="joint_left_1"
+    type="revolute">
+    <origin
+      xyz="0 0 0.27468"
+      rpy="0 0 0" />
+    <parent
+      link="link_left_0" />
+    <child
+      link="link_left_1" />
+    <axis
+      xyz="0 0 1" />
+    <limit
+      lower="-3.07"
+      upper="3.07"
+      effort="7"
+      velocity="3.14" />
+  </joint>
+  <link
+    name="link_left_2">
+    <inertial>
+      <origin
+        xyz="-0.000357 -0.106798 0.005329"
+        rpy="0 0 0" />
+      <mass
+        value="1.217" />
+      <inertia
+        ixx="0.017404207"
+        ixy="-4.3488E-05"
+        ixz="-3.297E-06"
+        iyy="0.000927428"
+        iyz="0.000108523"
+        izz="0.01731977" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://RM75_6F_V/meshes/link_left_2.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.79216 0.81961 0.93333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://RM75_6F_V/meshes/link_left_2.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="joint_left_2"
+    type="revolute">
+    <origin
+      xyz="0 0 0"
+      rpy="-1.5708 0 0" />
+    <parent
+      link="link_left_1" />
+    <child
+      link="link_left_2" />
+    <axis
+      xyz="0 0 1" />
+    <limit
+      lower="-2.26"
+      upper="2.26"
+      effort="7"
+      velocity="3.14" />
+  </joint>
+  <link
+    name="link_left_3">
+    <inertial>
+      <origin
+        xyz="3E-06 -10398 -0.011324"
+        rpy="0 0 0" />
+      <mass
+        value="1.11" />
+      <inertia
+        ixx="0.002099034"
+        ixy="2.292E-06"
+        ixz="-4.181E-06"
+        iyy="0.001641235"
+        iyz="-9.3542E-05"
+        izz="0.001182557" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://RM75_6F_V/meshes/link_left_3.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.79216 0.81961 0.93333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://RM75_6F_V/meshes/link_left_3.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="joint_left_3"
+    type="revolute">
+    <origin
+      xyz="0 -0.256 0"
+      rpy="1.5708 0 0" />
+    <parent
+      link="link_left_2" />
+    <child
+      link="link_left_3" />
+    <axis
+      xyz="0 0 1" />
+    <limit
+      lower="-3.07"
+      upper="3.07"
+      effort="7"
+      velocity="3.925" />
+  </joint>
+  <link
+    name="link_left_4">
+    <inertial>
+      <origin
+        xyz="-5E-06 -0.084658 0.004747"
+        rpy="0 0 0" />
+      <mass
+        value="0.685" />
+      <inertia
+        ixx="0.006204576"
+        ixy="-8.19E-07"
+        ixz="-6.15E-07"
+        iyy="0.000388441"
+        iyz="4.3054E-05"
+        izz="0.006162881" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://RM75_6F_V/meshes/link_left_4.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.79216 0.81961 0.93333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://RM75_6F_V/meshes/link_left_4.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="joint_left_4"
+    type="revolute">
+    <origin
+      xyz="0 0 0"
+      rpy="-1.5708 0 0" />
+    <parent
+      link="link_left_3" />
+    <child
+      link="link_left_4" />
+    <axis
+      xyz="0 0 1" />
+    <limit
+      lower="-2.355"
+      upper="2.355"
+      effort="7"
+      velocity="3.925" />
+  </joint>
+  <link
+    name="link_left_5">
+    <inertial>
+      <origin
+        xyz="7.8E-05 -0.012937 -0.008781"
+        rpy="0 0 0" />
+      <mass
+        value="0.619" />
+      <inertia
+        ixx="0.00077862"
+        ixy="2.261E-06"
+        ixz="-9.21E-07"
+        iyy="0.00059017"
+        iyz="-3.5324E-05"
+        izz="0.00047386" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://RM75_6F_V/meshes/link_left_5.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.79216 0.81961 0.93333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://RM75_6F_V/meshes/link_left_5.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="joint_left_5"
+    type="revolute">
+    <origin
+      xyz="0 -0.21 0"
+      rpy="1.5708 0 0" />
+    <parent
+      link="link_left_4" />
+    <child
+      link="link_left_5" />
+    <axis
+      xyz="0 0 1" />
+    <limit
+      lower="-3.07"
+      upper="3.07"
+      effort="7"
+      velocity="3.925" />
+  </joint>
+  <link
+    name="link_left_6">
+    <inertial>
+      <origin
+        xyz="-1.4E-05 -0.078524 0.002819"
+        rpy="0 0 0" />
+      <mass
+        value="0.602" />
+      <inertia
+        ixx="0.0044999"
+        ixy="-8.02E-07"
+        ixz="-4.44E-07"
+        iyy="0.00029476"
+        iyz="1.2831E-05"
+        izz="0.0044783" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://RM75_6F_V/meshes/link_left_6.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.79216 0.81961 0.93333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://RM75_6F_V/meshes/link_left_6.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="joint_left_6"
+    type="revolute">
+    <origin
+      xyz="0 0 0"
+      rpy="-1.5708 0 0" />
+    <parent
+      link="link_left_5" />
+    <child
+      link="link_left_6" />
+    <axis
+      xyz="0 0 1" />
+    <limit
+      lower="-2.2294"
+      upper="2.2294"
+      effort="7"
+      velocity="3.925" />
+  </joint>
+  <link
+    name="link_left_7">
+    <inertial>
+      <origin
+        xyz="-0.035924 0.003863 -0.023523"
+        rpy="0 0 0" />
+      <mass
+        value="0.35" />
+      <inertia
+        ixx="0.000273721"
+        ixy="-0.000077626"
+        ixz="-0.000113646"
+        iyy="0.000745881"
+        iyz="-1.2695E-05"
+        izz="0.000796864" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://Embodied lifting robot_two wheels_Embodied lifting robot_two wheels_Embodied lifting robot_two wheels_RM75-6F-V/meshes/link_left_7.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="1 1 1 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://Embodied lifting robot_two wheels_Embodied lifting robot_two wheels_Embodied lifting robot_two wheels_RM75-6F-V/meshes/link_left_7.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="joint_left_7"
+    type="revolute">
+    <origin
+      xyz="0 -0.1725 0"
+      rpy="1.5708 0 0" />
+    <parent
+      link="link_left_6" />
+    <child
+      link="link_left_7" />
+    <axis
+      xyz="0 0 -1" />
+    <limit
+      lower="-6.28"
+      upper="6.28"
+      effort="7"
+      velocity="3.925" />
+  </joint>
+  <link
+    name="link_left_camera">
+    <inertial>
+      <origin
+        xyz="-2.3289E-06 -0.028317 -0.013522"
+        rpy="0 0 0" />
+      <mass
+        value="0.08" />
+      <inertia
+        ixx="4.757E-05"
+        ixy="2.2E-08"
+        ixz="2.2E-08"
+        iyy="6.895E-06"
+        iyz="-9.66E-07"
+        izz="4.6649E-05" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://Embodied lifting robot_two wheels_Embodied lifting robot_two wheels_Embodied lifting robot_two wheels_RM75-6F-V/meshes/link_left_camera.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.69804 0.69804 0.69804 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://Embodied lifting robot_two wheels_Embodied lifting robot_two wheels_Embodied lifting robot_two wheels_RM75-6F-V/meshes/link_left_camera.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="joint_left_camera"
+    type="fixed">
+    <origin
+      xyz="-0.085499 0.043505 -0.01293"
+      rpy="0 0 -1.5708" />
+    <parent
+      link="link_left_7" />
+    <child
+      link="link_left_camera" />
+    <axis
+      xyz="0 0 0" />
+  </joint>
+  <link
+    name="hand_base">
+    <inertial>
+      <origin
+        xyz="3.84872289645122E-06 -4.41448135187968E-05 0.0553867866771657"
+        rpy="0 0 0" />
+      <mass
+        value="0.953455976099042" />
+      <inertia
+        ixx="0.00177628843801648"
+        ixy="-8.19676071724033E-10"
+        ixz="-3.00472546877836E-08"
+        iyy="0.00187418176115802"
+        iyz="-3.98009757950365E-07"
+        izz="0.000875448946929789" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://Embodied lifting robot_two wheels_Embodied lifting robot_two wheels_Embodied lifting robot_two wheels_RM75-6F-V/meshes/hand_base.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.615686274509804 0.63921568627451 0.674509803921569 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://Embodied lifting robot_two wheels_Embodied lifting robot_two wheels_Embodied lifting robot_two wheels_RM75-6F-V/meshes/hand_base.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="joint_hand_base"
+    type="fixed">
+    <origin
+      xyz="0 0 0"
+      rpy="0 0 0" />
+    <parent
+      link="link_left_7" />
+    <child
+      link="hand_base" />
+    <axis
+      xyz="0 0 0" />
+  </joint>
+  <link
+    name="Left_1_Link">
+    <inertial>
+      <origin
+        xyz="0.0202604071221892 0.0187577877882694 2.20960470526592E-14"
+        rpy="0 0 0" />
+      <mass
+        value="0.0309052898336316" />
+      <inertia
+        ixx="4.31215511677353E-06"
+        ixy="-4.26885891149938E-06"
+        ixz="-2.46366459463114E-13"
+        iyy="4.9707522189533E-06"
+        iyz="-2.22956217486463E-13"
+        izz="9.19223373728405E-06" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://Embodied lifting robot_two wheels_Embodied lifting robot_two wheels_Embodied lifting robot_two wheels_RM75-6F-V/meshes/Left_1_Link.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.615686274509804 0.63921568627451 0.674509803921569 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://Embodied lifting robot_two wheels_Embodied lifting robot_two wheels_Embodied lifting robot_two wheels_RM75-6F-V/meshes/Left_1_Link.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="Left_1_Joint"
+    type="revolute">
+    <origin
+      xyz="0.030141 0 0.10415"
+      rpy="1.5708 0 0" />
+    <parent
+      link="hand_base" />
+    <child
+      link="Left_1_Link" />
+    <axis
+      xyz="0 0 -1" />
+    <limit
+      lower="-0.91"
+      upper="0"
+      effort="10"
+      velocity="10" />
+  </joint>
+  <link
+    name="Left_Support_Link">
+    <inertial>
+      <origin
+        xyz="-0.0177925864232372 0.0354308985297288 -3.45319167880073E-05"
+        rpy="0 0 0" />
+      <mass
+        value="0.0828693338705683" />
+      <inertia
+        ixx="2.73957553511085E-05"
+        ixy="7.04281105447926E-06"
+        ixz="-1.08446711519888E-11"
+        iyy="6.34802949004157E-06"
+        iyz="1.18385736891846E-11"
+        izz="2.83129237821216E-05" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://Embodied lifting robot_two wheels_Embodied lifting robot_two wheels_Embodied lifting robot_two wheels_RM75-6F-V/meshes/Left_Support_Link.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.615686274509804 0.63921568627451 0.674509803921569 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://Embodied lifting robot_two wheels_Embodied lifting robot_two wheels_Embodied lifting robot_two wheels_RM75-6F-V/meshes/Left_Support_Link.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="Left_Support_Joint"
+    type="revolute">
+    <origin
+      xyz="0.040359 0.037365 0"
+      rpy="0 0 0" />
+    <parent
+      link="Left_1_Link" />
+    <child
+      link="Left_Support_Link" />
+    <axis
+      xyz="0 0 -1" />
+    <limit
+      lower="0"
+      upper="0"
+      effort="0"
+      velocity="0" />
+    <mimic
+      joint="Left_1_Joint"
+      multiplier="-1"
+      offset="0" />
+  </joint>
+  <link
+    name="Left_2_Link">
+    <inertial>
+      <origin
+        xyz="0.0202604071221829 0.0187577877878552 2.21631403129407E-14"
+        rpy="0 0 0" />
+      <mass
+        value="0.0309052898336314" />
+      <inertia
+        ixx="4.31215511674771E-06"
+        ixy="-4.26885891149736E-06"
+        ixz="-2.46366467847417E-13"
+        iyy="4.97075221897906E-06"
+        iyz="-2.22956225772745E-13"
+        izz="9.19223373728399E-06" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://Embodied lifting robot_two wheels_Embodied lifting robot_two wheels_Embodied lifting robot_two wheels_RM75-6F-V/meshes/Left_2_Link.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.615686274509804 0.63921568627451 0.674509803921569 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://Embodied lifting robot_two wheels_Embodied lifting robot_two wheels_Embodied lifting robot_two wheels_RM75-6F-V/meshes/Left_2_Link.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="Left_2_Joint"
+    type="revolute">
+    <origin
+      xyz="0.016 0 0.121"
+      rpy="1.5708 0 0" />
+    <parent
+      link="hand_base" />
+    <child
+      link="Left_2_Link" />
+    <axis
+      xyz="0 0 -1" />
+    <limit
+      lower="0"
+      upper="0"
+      effort="0"
+      velocity="0" />
+    <mimic
+      joint="Left_1_Joint"
+      multiplier="1"
+      offset="0" />
+  </joint>
+  <link
+    name="Right_2_Link">
+    <inertial>
+      <origin
+        xyz="0.0202604071211299 0.0187577877883374 2.11370080968728E-14"
+        rpy="0 0 0" />
+      <mass
+        value="0.0309052898336316" />
+      <inertia
+        ixx="4.31215511674775E-06"
+        ixy="-4.2688589114974E-06"
+        ixz="-2.46366382911271E-13"
+        iyy="4.9707522189791E-06"
+        iyz="-2.22956145920037E-13"
+        izz="9.19223373728407E-06" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://Embodied lifting robot_two wheels_Embodied lifting robot_two wheels_Embodied lifting robot_two wheels_RM75-6F-V/meshes/Right_2_Link.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.615686274509804 0.63921568627451 0.674509803921569 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://Embodied lifting robot_two wheels_Embodied lifting robot_two wheels_Embodied lifting robot_two wheels_RM75-6F-V/meshes/Right_2_Link.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="Right_2_Joint"
+    type="revolute">
+    <origin
+      xyz="-0.016 0 0.121"
+      rpy="1.5708 0 3.1416" />
+    <parent
+      link="hand_base" />
+    <child
+      link="Right_2_Link" />
+    <axis
+      xyz="0 0 1" />
+    <limit
+      lower="0"
+      upper="0"
+      effort="0"
+      velocity="0" />
+    <mimic
+      joint="Left_1_Joint"
+      multiplier="-1"
+      offset="0" />
+  </joint>
+  <link
+    name="Right_1_Link">
+    <inertial>
+      <origin
+        xyz="0.0202604071211989 0.0187577877891044 2.11409547592425E-14"
+        rpy="0 0 0" />
+      <mass
+        value="0.0309052898336314" />
+      <inertia
+        ixx="4.3121551167735E-06"
+        ixy="-4.26885891149935E-06"
+        ixz="-2.46366386343243E-13"
+        iyy="4.97075221895327E-06"
+        iyz="-2.22956149418598E-13"
+        izz="9.19223373728398E-06" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://Embodied lifting robot_two wheels_Embodied lifting robot_two wheels_Embodied lifting robot_two wheels_RM75-6F-V/meshes/Right_1_Link.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.615686274509804 0.63921568627451 0.674509803921569 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://Embodied lifting robot_two wheels_Embodied lifting robot_two wheels_Embodied lifting robot_two wheels_RM75-6F-V/meshes/Right_1_Link.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="Right_1_Joint"
+    type="revolute">
+    <origin
+      xyz="-0.030141 0 0.10415"
+      rpy="1.5708 0 3.1416" />
+    <parent
+      link="hand_base" />
+    <child
+      link="Right_1_Link" />
+    <axis
+      xyz="0 0 1" />
+    <limit
+      lower="0"
+      upper="0"
+      effort="0"
+      velocity="0" />
+    <mimic
+      joint="Left_1_Joint"
+      multiplier="-1"
+      offset="0" />
+  </joint>
+  <link
+    name="Right_Support_Link">
+    <inertial>
+      <origin
+        xyz="-0.0177925878352495 0.0354308970643828 -2.81887513877937E-08"
+        rpy="0 0 0" />
+      <mass
+        value="0.082869359674167" />
+      <inertia
+        ixx="2.73957568837024E-05"
+        ixy="7.04281063834988E-06"
+        ixz="-9.62685216616108E-12"
+        iyy="6.34803242941661E-06"
+        iyz="1.28138996747735E-11"
+        izz="2.83129239152281E-05" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://Embodied lifting robot_two wheels_Embodied lifting robot_two wheels_Embodied lifting robot_two wheels_RM75-6F-V/meshes/Right_Support_Link.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.615686274509804 0.63921568627451 0.674509803921569 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://Embodied lifting robot_two wheels_Embodied lifting robot_two wheels_Embodied lifting robot_two wheels_RM75-6F-V/meshes/Right_Support_Link.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="Right_Support_Joint"
+    type="revolute">
+    <origin
+      xyz="0.040359 0.037365 0"
+      rpy="0 0 0" />
+    <parent
+      link="Right_1_Link" />
+    <child
+      link="Right_Support_Link" />
+    <axis
+      xyz="0 0 -1" />
+    <limit
+      lower="0"
+      upper="0"
+      effort="0"
+      velocity="0" />
+    <mimic
+      joint="Left_1_Joint"
+      multiplier="-1"
+      offset="0" />
+  </joint>
+  <link
+    name="link_right_0">
+    <inertial>
+      <origin
+        xyz="-0.00001 0 -0.091692"
+        rpy="0 0 0" />
+      <mass
+        value="0.337" />
+      <inertia
+        ixx="0.000474035"
+        ixy="0"
+        ixz="0.00000001"
+        iyy="0.000474026"
+        iyz="0"
+        izz="0.000509509" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://RM75_6F_V/meshes/link_right_0.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.89804 0.91765 0.92941 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://RM75_6F_V/meshes/link_right_0.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="joint_right_0"
+    type="fixed">
+    <origin
+      xyz="0.062162 -0.059 0.13748"
+      rpy="0 0.7854 0" />
+    <parent
+      link="link_5" />
+    <child
+      link="link_right_0" />
+    <axis
+      xyz="0 0 0" />
+  </joint>
+  <link
+    name="link_right_1">
+    <inertial>
+      <origin
+        xyz="0.000241 -0.013273 -0.00995"
+        rpy="0 0 0" />
+      <mass
+        value="1.574" />
+      <inertia
+        ixx="0.002920666"
+        ixy="1.4703E-05"
+        ixz="-4.131E-06"
+        iyy="0.002476942"
+        iyz="-2.8462E-05"
+        izz="0.001727926" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://RM75_6F_V/meshes/link_right_1.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.79216 0.81961 0.93333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://RM75_6F_V/meshes/link_right_1.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="joint_right_1"
+    type="revolute">
+    <origin
+      xyz="0 0 0.2405"
+      rpy="0 0 0" />
+    <parent
+      link="link_right_0" />
+    <child
+      link="link_right_1" />
+    <axis
+      xyz="0 0 1" />
+    <limit
+      lower="-3.07"
+      upper="3.07"
+      effort="7"
+      velocity="3.14" />
+  </joint>
+  <link
+    name="link_right_2">
+    <inertial>
+      <origin
+        xyz="-0.000357 -0.106798 0.005329"
+        rpy="0 0 0" />
+      <mass
+        value="1.217" />
+      <inertia
+        ixx="0.017404207"
+        ixy="-4.3488E-05"
+        ixz="-3.297E-06"
+        iyy="0.000927428"
+        iyz="0.000108523"
+        izz="0.01731977" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://RM75_6F_V/meshes/link_right_2.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.79216 0.81961 0.93333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://RM75_6F_V/meshes/link_right_2.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="joint_right_2"
+    type="revolute">
+    <origin
+      xyz="0 0 0"
+      rpy="-1.5708 0 0" />
+    <parent
+      link="link_right_1" />
+    <child
+      link="link_right_2" />
+    <axis
+      xyz="0 0 1" />
+    <limit
+      lower="-2.26"
+      upper="2.26"
+      effort="7"
+      velocity="3.14" />
+  </joint>
+  <link
+    name="link_right_3">
+    <inertial>
+      <origin
+        xyz="3E-06 -10398 -0.011324"
+        rpy="0 0 0" />
+      <mass
+        value="1.11" />
+      <inertia
+        ixx="0.002099034"
+        ixy="2.292E-06"
+        ixz="-4.181E-06"
+        iyy="0.001641235"
+        iyz="-9.3542E-05"
+        izz="0.001182557" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://RM75_6F_V/meshes/link_right_3.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.79216 0.81961 0.93333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://RM75_6F_V/meshes/link_right_3.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="joint_right_3"
+    type="revolute">
+    <origin
+      xyz="0 -0.256 0"
+      rpy="1.5708 0 0" />
+    <parent
+      link="link_right_2" />
+    <child
+      link="link_right_3" />
+    <axis
+      xyz="0 0 1" />
+    <limit
+      lower="-3.07"
+      upper="3.07"
+      effort="7"
+      velocity="3.925" />
+  </joint>
+  <link
+    name="link_right_4">
+    <inertial>
+      <origin
+        xyz="-5E-06 -0.084658 0.004747"
+        rpy="0 0 0" />
+      <mass
+        value="0.685" />
+      <inertia
+        ixx="0.006204576"
+        ixy="-8.19E-07"
+        ixz="-6.15E-07"
+        iyy="0.000388441"
+        iyz="4.3054E-05"
+        izz="0.006162881" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://RM75_6F_V/meshes/link_right_4.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.79216 0.81961 0.93333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://RM75_6F_V/meshes/link_right_4.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="joint_right_4"
+    type="revolute">
+    <origin
+      xyz="0 0 0"
+      rpy="-1.5708 0 0" />
+    <parent
+      link="link_right_3" />
+    <child
+      link="link_right_4" />
+    <axis
+      xyz="0 0 1" />
+    <limit
+      lower="-2.355"
+      upper="2.355"
+      effort="7"
+      velocity="3.925" />
+  </joint>
+  <link
+    name="link_right_5">
+    <inertial>
+      <origin
+        xyz="7.8E-05 -0.012937 -0.008781"
+        rpy="0 0 0" />
+      <mass
+        value="0.619" />
+      <inertia
+        ixx="0.00077862"
+        ixy="2.261E-06"
+        ixz="-9.21E-07"
+        iyy="0.00059017"
+        iyz="-3.5324E-05"
+        izz="0.00047386" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://RM75_6F_V/meshes/link_right_5.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.79216 0.81961 0.93333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://RM75_6F_V/meshes/link_right_5.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="joint_right_5"
+    type="revolute">
+    <origin
+      xyz="0 -0.21 0"
+      rpy="1.5708 0 0" />
+    <parent
+      link="link_right_4" />
+    <child
+      link="link_right_5" />
+    <axis
+      xyz="0 0 1" />
+    <limit
+      lower="-3.07"
+      upper="3.07"
+      effort="7"
+      velocity="3.925" />
+  </joint>
+  <link
+    name="link_right_6">
+    <inertial>
+      <origin
+        xyz="-1.4E-05 -0.078524 0.002819"
+        rpy="0 0 0" />
+      <mass
+        value="0.602" />
+      <inertia
+        ixx="0.0044999"
+        ixy="-8.02E-07"
+        ixz="-4.44E-07"
+        iyy="0.00029476"
+        iyz="1.2831E-05"
+        izz="0.0044783" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://RM75_6F_V/meshes/link_right_6.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.79216 0.81961 0.93333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://RM75_6F_V/meshes/link_right_6.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="joint_right_6"
+    type="revolute">
+    <origin
+      xyz="0 0 0"
+      rpy="-1.5708 0 0" />
+    <parent
+      link="link_right_5" />
+    <child
+      link="link_right_6" />
+    <axis
+      xyz="0 0 1" />
+    <limit
+      lower="-2.2294"
+      upper="2.2294"
+      effort="7"
+      velocity="3.925" />
+  </joint>
+  <link
+    name="link_right_7">
+    <inertial>
+      <origin
+        xyz="-0.035924 0.003863 -0.023523"
+        rpy="0 0 0" />
+      <mass
+        value="0.35" />
+      <inertia
+        ixx="0.000273721"
+        ixy="-0.000077626"
+        ixz="-0.000113646"
+        iyy="0.000745881"
+        iyz="-1.2695E-05"
+        izz="0.000796864" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://RM75_6F_V/meshes/link_right_7.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="1 1 1 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://RM75_6F_V/meshes/link_right_7.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="joint_right_7"
+    type="revolute">
+    <origin
+      xyz="0 -0.1725 0"
+      rpy="1.5708 0 0" />
+    <parent
+      link="link_right_6" />
+    <child
+      link="link_right_7" />
+    <axis
+      xyz="0 0 -1" />
+    <limit
+      lower="-6.28"
+      upper="6.28"
+      effort="7"
+      velocity="3.925" />
+  </joint>
+  <link
+    name="link_right_camera">
+    <inertial>
+      <origin
+        xyz="2.3289E-06 0.028317 -0.013522"
+        rpy="0 0 0" />
+      <mass
+        value="0.08" />
+      <inertia
+        ixx="4.757E-05"
+        ixy="2.2E-08"
+        ixz="-2.2E-08"
+        iyy="6.895E-06"
+        iyz="9.66E-07"
+        izz="4.6649E-05" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://RM75_6F_V/meshes/link_right_camera.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.69804 0.69804 0.69804 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://RM75_6F_V/meshes/link_right_camera.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="joint_right_camera"
+    type="fixed">
+    <origin
+      xyz="0.085512 -0.044595 -0.01593"
+      rpy="0 0 0" />
+    <parent
+      link="link_right_7" />
+    <child
+      link="link_right_camera" />
+    <axis
+      xyz="0 0 0" />
+  </joint>
+  <link
+    name="hand_base2">
+    <inertial>
+      <origin
+        xyz="3.84872289645122E-06 -4.41448135187968E-05 0.0553867866771657"
+        rpy="0 0 0" />
+      <mass
+        value="0.953455976099042" />
+      <inertia
+        ixx="0.00177628843801648"
+        ixy="-8.19676071724033E-10"
+        ixz="-3.00472546877836E-08"
+        iyy="0.00187418176115802"
+        iyz="-3.98009757950365E-07"
+        izz="0.000875448946929789" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://Embodied lifting robot_two wheels_Embodied lifting robot_two wheels_Embodied lifting robot_two wheels_RM75-6F-V/meshes/hand_base2.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.615686274509804 0.63921568627451 0.674509803921569 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://Embodied lifting robot_two wheels_Embodied lifting robot_two wheels_Embodied lifting robot_two wheels_RM75-6F-V/meshes/hand_base2.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="joint_hand_base2"
+    type="fixed">
+    <origin
+      xyz="0 0 0"
+      rpy="0 0 0" />
+    <parent
+      link="link_right_7" />
+    <child
+      link="hand_base2" />
+    <axis
+      xyz="0 0 0" />
+  </joint>
+  <link
+    name="Left_1_Link2">
+    <inertial>
+      <origin
+        xyz="0.0202604071221892 0.0187577877882694 2.20960470526592E-14"
+        rpy="0 0 0" />
+      <mass
+        value="0.0309052898336316" />
+      <inertia
+        ixx="4.31215511677353E-06"
+        ixy="-4.26885891149938E-06"
+        ixz="-2.46366459463114E-13"
+        iyy="4.9707522189533E-06"
+        iyz="-2.22956217486463E-13"
+        izz="9.19223373728405E-06" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://Embodied lifting robot_two wheels_Embodied lifting robot_two wheels_Embodied lifting robot_two wheels_RM75-6F-V/meshes/Left_1_Link2.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.615686274509804 0.63921568627451 0.674509803921569 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://Embodied lifting robot_two wheels_Embodied lifting robot_two wheels_Embodied lifting robot_two wheels_RM75-6F-V/meshes/Left_1_Link2.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="Left_1_Joint2"
+    type="revolute">
+    <origin
+      xyz="0.030141 0 0.10415"
+      rpy="1.5708 0 0" />
+    <parent
+      link="hand_base2" />
+    <child
+      link="Left_1_Link2" />
+    <axis
+      xyz="0 0 -1" />
+    <limit
+      lower="-0.91"
+      upper="0"
+      effort="10"
+      velocity="10" />
+  </joint>
+  <link
+    name="Left_Support_Link2">
+    <inertial>
+      <origin
+        xyz="-0.0177925864232372 0.0354308985297288 -3.45319167880073E-05"
+        rpy="0 0 0" />
+      <mass
+        value="0.0828693338705683" />
+      <inertia
+        ixx="2.73957553511085E-05"
+        ixy="7.04281105447926E-06"
+        ixz="-1.08446711519888E-11"
+        iyy="6.34802949004157E-06"
+        iyz="1.18385736891846E-11"
+        izz="2.83129237821216E-05" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://Embodied lifting robot_two wheels_Embodied lifting robot_two wheels_Embodied lifting robot_two wheels_RM75-6F-V/meshes/Left_Support_Link2.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.615686274509804 0.63921568627451 0.674509803921569 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://Embodied lifting robot_two wheels_Embodied lifting robot_two wheels_Embodied lifting robot_two wheels_RM75-6F-V/meshes/Left_Support_Link2.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="Left_Support_Joint2"
+    type="revolute">
+    <origin
+      xyz="0.040359 0.037365 0"
+      rpy="0 0 0" />
+    <parent
+      link="Left_1_Link2" />
+    <child
+      link="Left_Support_Link2" />
+    <axis
+      xyz="0 0 -1" />
+    <limit
+      lower="0"
+      upper="0"
+      effort="0"
+      velocity="0" />
+    <mimic
+      joint="Left_1_Joint2"
+      multiplier="-1"
+      offset="0" />
+  </joint>
+  <link
+    name="Left_2_Link2">
+    <inertial>
+      <origin
+        xyz="0.0202604071221829 0.0187577877878552 2.21631403129407E-14"
+        rpy="0 0 0" />
+      <mass
+        value="0.0309052898336314" />
+      <inertia
+        ixx="4.31215511674771E-06"
+        ixy="-4.26885891149736E-06"
+        ixz="-2.46366467847417E-13"
+        iyy="4.97075221897906E-06"
+        iyz="-2.22956225772745E-13"
+        izz="9.19223373728399E-06" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://Embodied lifting robot_two wheels_Embodied lifting robot_two wheels_Embodied lifting robot_two wheels_RM75-6F-V/meshes/Left_2_Link2.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.615686274509804 0.63921568627451 0.674509803921569 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://Embodied lifting robot_two wheels_Embodied lifting robot_two wheels_Embodied lifting robot_two wheels_RM75-6F-V/meshes/Left_2_Link2.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="Left_2_Joint2"
+    type="revolute">
+    <origin
+      xyz="0.016 0 0.121"
+      rpy="1.5708 0 0" />
+    <parent
+      link="hand_base2" />
+    <child
+      link="Left_2_Link2" />
+    <axis
+      xyz="0 0 -1" />
+    <limit
+      lower="0"
+      upper="0"
+      effort="0"
+      velocity="0" />
+    <mimic
+      joint="Left_1_Joint2"
+      multiplier="1"
+      offset="0" />
+  </joint>
+  <link
+    name="Right_2_Link2">
+    <inertial>
+      <origin
+        xyz="0.0202604071211299 0.0187577877883374 2.11370080968728E-14"
+        rpy="0 0 0" />
+      <mass
+        value="0.0309052898336316" />
+      <inertia
+        ixx="4.31215511674775E-06"
+        ixy="-4.2688589114974E-06"
+        ixz="-2.46366382911271E-13"
+        iyy="4.9707522189791E-06"
+        iyz="-2.22956145920037E-13"
+        izz="9.19223373728407E-06" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://Embodied lifting robot_two wheels_Embodied lifting robot_two wheels_Embodied lifting robot_two wheels_RM75-6F-V/meshes/Right_2_Link2.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.615686274509804 0.63921568627451 0.674509803921569 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://Embodied lifting robot_two wheels_Embodied lifting robot_two wheels_Embodied lifting robot_two wheels_RM75-6F-V/meshes/Right_2_Link2.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="Right_2_Joint2"
+    type="revolute">
+    <origin
+      xyz="-0.016 0 0.121"
+      rpy="1.5708 0 3.1416" />
+    <parent
+      link="hand_base2" />
+    <child
+      link="Right_2_Link2" />
+    <axis
+      xyz="0 0 1" />
+    <limit
+      lower="0"
+      upper="0"
+      effort="0"
+      velocity="0" />
+    <mimic
+      joint="Left_1_Joint2"
+      multiplier="-1"
+      offset="0" />
+  </joint>
+  <link
+    name="Right_1_Link2">
+    <inertial>
+      <origin
+        xyz="0.0202604071211989 0.0187577877891044 2.11409547592425E-14"
+        rpy="0 0 0" />
+      <mass
+        value="0.0309052898336314" />
+      <inertia
+        ixx="4.3121551167735E-06"
+        ixy="-4.26885891149935E-06"
+        ixz="-2.46366386343243E-13"
+        iyy="4.97075221895327E-06"
+        iyz="-2.22956149418598E-13"
+        izz="9.19223373728398E-06" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://Embodied lifting robot_two wheels_Embodied lifting robot_two wheels_Embodied lifting robot_two wheels_RM75-6F-V/meshes/Right_1_Link2.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.615686274509804 0.63921568627451 0.674509803921569 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://Embodied lifting robot_two wheels_Embodied lifting robot_two wheels_Embodied lifting robot_two wheels_RM75-6F-V/meshes/Right_1_Link2.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="Right_1_Joint2"
+    type="revolute">
+    <origin
+      xyz="-0.030141 0 0.10415"
+      rpy="1.5708 0 3.1416" />
+    <parent
+      link="hand_base2" />
+    <child
+      link="Right_1_Link2" />
+    <axis
+      xyz="0 0 1" />
+    <limit
+      lower="0"
+      upper="0"
+      effort="0"
+      velocity="0" />
+    <mimic
+      joint="Left_1_Joint2"
+      multiplier="-1"
+      offset="0" />
+  </joint>
+  <link
+    name="Right_Support_Link2">
+    <inertial>
+      <origin
+        xyz="-0.0177925878352495 0.0354308970643828 -2.81887513877937E-08"
+        rpy="0 0 0" />
+      <mass
+        value="0.082869359674167" />
+      <inertia
+        ixx="2.73957568837024E-05"
+        ixy="7.04281063834988E-06"
+        ixz="-9.62685216616108E-12"
+        iyy="6.34803242941661E-06"
+        iyz="1.28138996747735E-11"
+        izz="2.83129239152281E-05" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://Embodied lifting robot_two wheels_Embodied lifting robot_two wheels_Embodied lifting robot_two wheels_RM75-6F-V/meshes/Right_Support_Link2.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.615686274509804 0.63921568627451 0.674509803921569 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://Embodied lifting robot_two wheels_Embodied lifting robot_two wheels_Embodied lifting robot_two wheels_RM75-6F-V/meshes/Right_Support_Link2.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="Right_Support_Joint2"
+    type="revolute">
+    <origin
+      xyz="0.040359 0.037365 0"
+      rpy="0 0 0" />
+    <parent
+      link="Right_1_Link2" />
+    <child
+      link="Right_Support_Link2" />
+    <axis
+      xyz="0 0 -1" />
+    <limit
+      lower="0"
+      upper="0"
+      effort="0"
+      velocity="0" />
+    <mimic
+      joint="Left_1_Joint2"
+      multiplier="-1"
+      offset="0" />
+  </joint>
+  <link
+    name="link_mid_1">
+    <inertial>
+      <origin
+        xyz="0.00541 -0.000077 -0.076042"
+        rpy="0 0 0" />
+      <mass
+        value="0.14" />
+      <inertia
+        ixx="0.000122559"
+        ixy="-1.63E-07"
+        ixz="3.095E-06"
+        iyy="0.000118553"
+        iyz="-2.12E-07"
+        izz="0.000161407" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://RM75_6F_V/meshes/link_mid_1.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="1 1 1 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://RM75_6F_V/meshes/link_mid_1.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="joint_mid_1"
+    type="revolute">
+    <origin
+      xyz="0 -0.0675 0.21566"
+      rpy="0 0 1.5708" />
+    <parent
+      link="link_5" />
+    <child
+      link="link_mid_1" />
+    <axis
+      xyz="0 0 1" />
+    <limit
+      lower="-1.38"
+      upper="1.38"
+      effort="7"
+      velocity="3.14" />
+  </joint>
+  <link
+    name="link_mid_2">
+    <inertial>
+      <origin
+        xyz="0.027378 0.026445 0.054976"
+        rpy="0 0 0" />
+      <mass
+        value="0.37" />
+      <inertia
+        ixx="0.00087368"
+        ixy="-5.05E-07"
+        ixz="6.378E-05"
+        iyy="6.37406E-04"
+        iyz="-2E-07"
+        izz="1.032833E-03" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://RM75_6F_V/meshes/link_mid_2.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="1 1 1 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://RM75_6F_V/meshes/link_mid_2.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="joint_mid_2"
+    type="revolute">
+    <origin
+      xyz="0.02 -0.027 0.0965"
+      rpy="0 0 0" />
+    <parent
+      link="link_mid_1" />
+    <child
+      link="link_mid_2" />
+    <axis
+      xyz="0 -1 0" />
+    <limit
+      lower="-1.03"
+      upper="1.03"
+      effort="7"
+      velocity="3.14" />
+  </joint>
+  <link
+    name="link_mid_camera">
+    <inertial>
+      <origin
+        xyz="-0.013522 -0.028427 2.3307E-06"
+        rpy="0 0 0" />
+      <mass
+        value="0.08" />
+      <inertia
+        ixx="0.000046649"
+        ixy="-0.000000966"
+        ixz="-2.2E-08"
+        iyy="6.895E-06"
+        iyz="-2.2E-08"
+        izz="4.757E-05" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://RM75_6F_V/meshes/link_mid_camera.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.69804 0.69804 0.69804 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://RM75_6F_V/meshes/link_mid_camera.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="joint_mid_camera"
+    type="fixed">
+    <origin
+      xyz="0.076814 0.059063 0.061646"
+      rpy="0 0 0" />
+    <parent
+      link="link_mid_2" />
+    <child
+      link="link_mid_camera" />
+    <axis
+      xyz="0 0 0" />
+  </joint>
+  <link
+    name="link_6">
+    <inertial>
+      <origin
+        xyz="-0.013172 -0.030923 3E-06"
+        rpy="0 0 0" />
+      <mass
+        value="0.08" />
+      <inertia
+        ixx="4.6649E-05"
+        ixy="-9.66E-07"
+        ixz="-2.2E-08"
+        iyy="6.895E-06"
+        iyz="-2.2E-08"
+        izz="4.757E-05" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://RM75_6F_V/meshes/link_6.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="1 1 1 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://RM75_6F_V/meshes/link_6.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="joint_6"
+    type="fixed">
+    <origin
+      xyz="0.29524 0.032447 -0.1057"
+      rpy="0 0 0" />
+    <parent
+      link="base_link" />
+    <child
+      link="link_6" />
+    <axis
+      xyz="0 0 0" />
+  </joint>
+</robot>
